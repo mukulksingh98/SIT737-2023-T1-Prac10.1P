@@ -5,11 +5,11 @@ Access Terminal
 Create Cluster
 gcloud config set project PROJECT_ID
 gcloud container clusters create-auto hello-cluster \
-    --region=australia-southeast2
+    --region=australia-southeast1
     
 Get your credentials
 gcloud container clusters get-credentials hello-cluster \
-    --region australia-southeast2
+    --region australia-southeast1
 
 Pull your docker image and push to gcr
 docker pull mukulksingh98/sit737:latest
@@ -37,4 +37,4 @@ http://EXTERNAL.IP
 Delete your service and cluster
 kubectl delete service hello-server
 gcloud container clusters delete hello-cluster \
-    --region australia-southeast2
+    --region australia-southeast1
