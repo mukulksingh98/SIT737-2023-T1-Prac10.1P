@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: my-node-app
-          image:  mukulksingh98/sit737:latest
+          image:  mukulksingh98/sit727
           ports:
             - containerPort: 5000
